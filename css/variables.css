@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Cursedtimer';
+  src: url('/fonts/CursedTimer.woff2') format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-Medium.woff2') format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+:root{
+  --red: #FF1F47;
+  --orange:#D98D0D;
+  --textwhite:#fcfcfc;
+  --stroke:#3F4451;
+  --bg:#14161B;
+  --numberbg:#090909;
+
+  --font-size-18px: 1.8rem;
+  --font-size-21px: 2.1rem;
+  --font-size-26px: 2.6rem;
+  --font-size-40px: 4rem;
+  --font-size-50px: 5rem;  
+  --font-size-65px: 6.5rem;
+  --font-size-130px: 13rem;
+
+  --font-family-cursedtimer: 'Cursedtimer', sans-serif;
+  --font-family-rubik: 'Rubik', sans-serif;
+}

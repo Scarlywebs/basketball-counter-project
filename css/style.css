@@ -1,0 +1,162 @@
+
+body{
+  font-family: var(--font-family-rubik);
+  color: var(--textwhite); 
+  background-image: url(/imgs/basketball-playoffs\ 1.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 835px;
+  margin: 35rem auto 0;
+  padding: 3rem 2rem;
+  background-color: var(--bg);  
+  border: 2px solid var(--stroke);
+  border-radius: 40px;
+  box-shadow: 1px 1px 50px 0px rgba(0, 0, 0, 0.75);
+}
+#scoreboard_home, 
+#scoreboard_guest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+#scoreboard_home h2,
+#scoreboard_guest h2{
+  font-size: var(--font-size-40px);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#home_score, 
+#guest_score{
+  text-align: center;
+  width: 210px;
+  height: 190px;
+  margin: 1rem 0 2rem;
+  padding-top: 3rem;
+  font-family: var(--font-family-cursedtimer);
+  font-size: var(--font-size-130px);
+  background-color: var(--numberbg);
+  border-radius: 10px;
+  color: var(--red)
+}
+#home_counter, 
+#guest_counter{
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+}
+#home_add1,
+#home_add2,
+#home_add3,
+#guest_add1,
+#guest_add2,
+#guest_add3{
+  color: var(--stroke);
+  font-size: var(--font-size-18px);
+  border: 2px solid var(--stroke);
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#home_add1:hover,
+#home_add2:hover,
+#home_add3:hover,
+#guest_add1:hover,
+#guest_add2:hover,
+#guest_add3:hover{
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+
+#scoreboard_middle,
+#scoreboard_timer_top{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#scoreboard_timer_top {
+  margin-bottom: -3rem;
+}
+#scoreboard_bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#scoreboard_timer{
+  text-align: center;
+  width: 290px;
+  height: 90px;
+  margin: 1rem 0;
+  padding-top: 1.25rem;
+  font-family: var(--font-family-cursedtimer);
+  font-size: var(--font-size-65px);
+  background-color: var(--numberbg);
+  border: 2px solid var(--stroke);
+  border-radius: 10px;
+  color: var(--red)
+}
+#scoreboard_fouls{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#scoreboard_period,
+#scoreboard_foul_left,
+#scoreboard_foul_right{
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#scoreboard_period_score, 
+#scoreboard_foul_left_score,
+#scoreboard_foul_right_score{
+  text-align: center;
+  padding: .75rem 2.5rem 0;
+  font-family: var(--font-family-cursedtimer);
+  font-size: var(--font-size-50px);
+  background-color: var(--numberbg);
+  border: 2px solid var(--stroke);
+  border-radius: 5px;
+  color: var(--orange)  
+}
+#scoreboard_period_score {
+  color: var(--red) 
+}
+#scoreboard_period_title, 
+#scoreboard_foul_left_title, 
+#scoreboard_foul_right_title{
+  font-size: var(--font-size-21px);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+#scoreboard_reset {
+  width: 100%;
+  margin-top: 6rem;
+  font-size: var(--font-size-26px);
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--textwhite);
+  background-color:unset;
+  padding: 1.5rem 0;
+  border: 2px solid var(--stroke);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#scoreboard_reset:hover {
+  background-color: orange;
+}
+#scoreboard_game_guide{
+  font-size: 14.5px;
+  color: #768094;
+  margin-top: 2rem;
+  cursor: pointer;
+}
